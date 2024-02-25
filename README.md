@@ -1,17 +1,9 @@
-# Furry Generator
+# Bootles
 
-> Status: WIP, no working prototype
-
-A Python script that produces a commentary-style BetaEtaDelota style videos!
-
-## Installation
-
-Install the packages needed in the `requirements.txt`:
-
-```console
-pip install -r requirements.txt
-```
+A script that produces commentary-style videos in the form of [BetaEtaDelota][bootle]!
 
 ## License
 
-MIT
+GPL-2.0
+
+[bootle]: https://www.youtube.com/@BetaEtaDelota
