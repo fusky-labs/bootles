@@ -1,4 +1,4 @@
-from flask import Flask, request, make_response
+from flask import Flask, request, Response, jsonify
 import argparse
 
 parser = argparse.ArgumentParser(
@@ -22,7 +22,7 @@ def after_request(response):
 
     header["Access-Control-Allow-Origin"] = "*"
     header["Access-Control-Allow-Headers"] = "*"
-    header["Access-Control-Allow-Methods"] = "GET,POST,PATCH,PUT"
+    header["Access-Control-Allow-Methods"] = "GET,POST"
     header['X-Content-Type-Options'] = 'nosniff'
     header['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
 
@@ -32,6 +32,11 @@ def after_request(response):
 @bootles.route("/", methods=["GET"])
 def root():
     return "Your mom gay"
+
+
+@bootles.route("/process", methods=["POST"])
+def process_video():
+    return jsonify(request.json)
 
 
 if __name__ == "__main__":
