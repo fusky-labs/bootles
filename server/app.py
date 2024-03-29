@@ -29,12 +29,12 @@ def after_request(response):
     return response
 
 
-@bootles.route("/", methods=["GET"])
+@bootles.get("/")
 def root():
-    return "Your mom gay"
+    return "Ping server stuff here"
 
 
-@bootles.route("/process", methods=["POST"])
+@bootles.post("/process")
 def process_video():
     return jsonify(request.json)
 
