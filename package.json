@@ -3,13 +3,9 @@
   "name": "bootles-generator",
   "license": "GPL-2.0-only",
   "workspaces": [
-    "utils/configs/*",
-    "assets",
-    "client",
-    "generator"
+    "client"
   ],
   "devDependencies": {
-    "@kuro-utils/prettier": "*",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
     "turbo": "^1.12.4"

@@ -1,1 +1,5 @@
-module.exports = require("@kuro-utils/prettier/index.json")
+module.exports = {
+  semi: false,
+  tabWidth: 2,
+  useTab: false
+}

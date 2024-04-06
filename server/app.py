@@ -1,4 +1,4 @@
-from flask import Flask, request, Response, jsonify
+from flask import Flask, request, jsonify
 import argparse
 
 parser = argparse.ArgumentParser(
